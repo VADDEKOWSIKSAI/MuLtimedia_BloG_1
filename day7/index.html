@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Destination Guide</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/9985/9985721.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <header class="hero">
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="https://cdn-icons-png.flaticon.com/128/9985/9985721.png"
+          alt="Travel Icon"
+        />
+        <h1 class="glow-text">Travel Destination Guide</h1>
+      </div>
+      <p class="subtitle">
+        Explore the world's most iconic destinations with our curated guide.
+      </p>
+
+      <nav class="nav-container">
+        <a href="#paris" class="nav-btn">Paris</a>
+        <a href="#kyoto" class="nav-btn">Kyoto</a>
+        <a href="#nyc" class="nav-btn">New York</a>
+        <a href="#delhi" class="nav-btn">Delhi</a>
+        <a href="#sydney" class="nav-btn">Sydney</a>
+      </nav>
+    </header>
+
+    <section class="draggable-gallery">
+      <p class="gallery-bg-text">Capture the Moment</p>
+
+      <div
+        class="draggable-card"
+        style="--top: 15%; --left: 15%; --rotate: -5deg"
+      >
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/R.jpeg" alt="Paris" />
+            <div class="card-title">Paris</div>
+          </div>
+          <div class="card-back">
+            <p class="back-hint">Spell the city</p>
+            <div class="letter-grid" data-city="PARIS"></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="draggable-card"
+        style="--top: 45%; --left: 20%; --rotate: -7deg"
+      >
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/iStock-509472000.jpg" alt="Kyoto" />
+            <div class="card-title">Kyoto</div>
+          </div>
+          <div class="card-back">
+            <p class="back-hint">Spell the city</p>
+            <div class="letter-grid" data-city="KYOTO"></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="draggable-card"
+        style="--top: 10%; --left: 40%; --rotate: 8deg"
+      >
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/CORT-NYC-StudyUSA07.jpg" alt="New York" />
+            <div class="card-title">NYC</div>
+          </div>
+          <div class="card-back">
+            <p class="back-hint">Spell the city</p>
+            <div class="letter-grid" data-city="NYC"></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="draggable-card"
+        style="--top: 35%; --left: 55%; --rotate: 10deg"
+      >
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/travel-4813658_1920.jpg" alt="Delhi" />
+            <div class="card-title">Delhi</div>
+          </div>
+          <div class="card-back">
+            <p class="back-hint">Spell the city</p>
+            <div class="letter-grid" data-city="DELHI"></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="draggable-card"
+        style="--top: 25%; --left: 75%; --rotate: 2deg"
+      >
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/sydney-6803993_1280.jpg" alt="Sydney" />
+            <div class="card-title">Sydney</div>
+          </div>
+          <div class="card-back">
+            <p class="back-hint">Spell the city</p>
+            <div class="letter-grid" data-city="SYDNEY"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="content">
+      <section id="paris" class="destination-card">
+        <div class="card-content">
+          <div class="text-side">
+            <span class="country-code">FR</span>
+            <h2>Paris, France</h2>
+            <p>
+              The City of Love, Fashion, and Pastries. Don't miss the Eiffel
+              Tower or a romantic cruise on the Seine River.
+            </p>
+          </div>
+          <div class="image-side">
+            <img src="./img/R.jpeg" alt="Paris" />
+          </div>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5660.13820186775!2d2.294481!3d48.85837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e1!3m2!1sen!2sin!4v1769837610653!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="kyoto" class="destination-card">
+        <div class="card-content">
+          <div class="text-side">
+            <span class="country-code">JP</span>
+            <h2>Kyoto, Japan</h2>
+            <p>
+              Kyoto is the heart of Japan's culture, where ancient traditions
+              meet modern life, creating a timeless beauty.
+            </p>
+          </div>
+          <div class="image-side">
+            <img src="./img/iStock-509472000.jpg" alt="Kyoto" />
+          </div>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250266.48218505425!2d135.55406238071788!3d35.09808469506473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2sKyoto%2C%20Japan!5e1!3m2!1sen!2sin!4v1769837475165!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="nyc" class="destination-card">
+        <div class="card-content">
+          <div class="text-side">
+            <span class="country-code">US</span>
+            <h2>New York City, USA</h2>
+            <p>
+              The city that never sleeps — where dreams rise higher than the
+              skyline and every corner tells a story.
+            </p>
+          </div>
+          <div class="image-side">
+            <img src="./img/CORT-NYC-StudyUSA07.jpg" alt="New York City" />
+          </div>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231913.09268626204!2d-74.1443121139717!3d40.69702432169211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e1!3m2!1sen!2sin!4v1769838423535!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="delhi" class="destination-card">
+        <div class="card-content">
+          <div class="text-side">
+            <span class="country-code">IN</span>
+            <h2>New Delhi, India</h2>
+            <p>
+              Delhi – Where History Whispers and Dreams Roar. A vibrant blend of
+              ancient monuments and bustling modern life.
+            </p>
+          </div>
+          <div class="image-side">
+            <img src="./img/travel-4813658_1920.jpg" alt="Delhi" />
+          </div>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16783.726155405922!2d77.2134209890362!3d28.609055057387693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2db961be393%3A0xf6c7ef5ee6dd10ae!2sIndia%20Gate%2C%20New%20Delhi%2C%20Delhi!5e1!3m2!1sen!2sin!4v1769838631327!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="sydney" class="destination-card">
+        <div class="card-content">
+          <div class="text-side">
+            <span class="country-code">AU</span>
+            <h2>Sydney, Australia</h2>
+            <p>
+              Sydney shines as a vibrant harbour city where nature, culture, and
+              adventure come alive under the Pacific sun.
+            </p>
+          </div>
+          <div class="image-side">
+            <img src="./img/sydney-6803993_1280.jpg" alt="Sydney" />
+          </div>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d508089.0177410015!2d150.60233545717787!3d-33.84780529243593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW%2C%20Australia!5e1!3m2!1sen!2sin!4v1769839145576!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Travel Destination Guide. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const cards = document.querySelectorAll(".draggable-card");
+      let highestZ = 10;
+
+      // Initialize letter game for each card
+      document.querySelectorAll(".letter-grid").forEach((grid) => {
+        const city = grid.dataset.city.toUpperCase();
+        const card = grid.closest(".draggable-card");
+
+        // Scramble letters
+        let scrambled;
+        do {
+          scrambled = city.split("").sort(() => Math.random() - 0.5);
+        } while (scrambled.join("") === city && city.length > 1);
+
+        grid.dataset.guess = "";
+
+        scrambled.forEach((letter) => {
+          const node = document.createElement("div");
+          node.className = "letter-node";
+          node.textContent = letter;
+
+          node.addEventListener("mousedown", (e) => e.stopPropagation());
+          node.addEventListener("touchstart", (e) => e.stopPropagation());
+
+          node.addEventListener("click", (e) => {
+            e.stopPropagation();
+            if (node.classList.contains("selected")) return;
+
+            node.classList.add("selected");
+            grid.dataset.guess += letter;
+
+            const currentGuess = grid.dataset.guess;
+
+            if (city.startsWith(currentGuess)) {
+              if (currentGuess === city) {
+                card.classList.add("flipped");
+                grid.style.pointerEvents = "none";
+              }
+            } else {
+              grid.querySelectorAll(".letter-node").forEach((n) => {
+                n.classList.add("error");
+                setTimeout(() => {
+                  n.classList.remove("error", "selected");
+                }, 500);
+              });
+              grid.dataset.guess = "";
+            }
+          });
+          grid.appendChild(node);
+        });
+      });
+
+      // Enhanced Dragging logic
+      cards.forEach((card) => {
+        let isDragging = false;
+        let startX, startY;
+        let cardX = 0,
+          cardY = 0;
+        let currentX = 0,
+          currentY = 0;
+
+        const startDragging = (e) => {
+          if (e.target.closest(".letter-node")) return;
+
+          isDragging = true;
+          card.style.zIndex = ++highestZ;
+          card.style.cursor = "grabbing";
+
+          const clientX =
+            e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
+          const clientY =
+            e.type === "touchstart" ? e.touches[0].clientY : e.clientY;
+
+          startX = clientX - cardX;
+          startY = clientY - cardY;
+        };
+
+        const drag = (e) => {
+          if (!isDragging) return;
+          e.preventDefault();
+
+          const clientX =
+            e.type === "touchmove" ? e.touches[0].clientX : e.clientX;
+          const clientY =
+            e.type === "touchmove" ? e.touches[0].clientY : e.clientY;
+
+          cardX = clientX - startX;
+          cardY = clientY - startY;
+
+          // Use requestAnimationFrame for smooth performance
+          requestAnimationFrame(() => {
+            card.style.transform = `translate3d(${cardX}px, ${cardY}px, 0)`;
+          });
+        };
+
+        const stopDragging = () => {
+          isDragging = false;
+          card.style.cursor = "grab";
+        };
+
+        card.addEventListener("mousedown", startDragging);
+        card.addEventListener("touchstart", startDragging, { passive: true });
+
+        window.addEventListener("mousemove", drag);
+        window.addEventListener("touchmove", drag, { passive: false });
+
+        window.addEventListener("mouseup", stopDragging);
+        window.addEventListener("touchend", stopDragging);
+      });
+    </script>
+  </body>
+</html>
